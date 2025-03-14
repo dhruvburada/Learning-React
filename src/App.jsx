@@ -1,11 +1,12 @@
 import './App.css'
-import UseMemoDemo from './components/useMemo/UseMemoDemo'
+import UseCallBackDemo from './components/useCallBack/useCallBackDemo'
+
 
 function App() {
   return (
 
     <>
-      <UseMemoDemo/>
+      <UseCallBackDemo/>
     
     </>
 
