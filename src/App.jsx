@@ -1,13 +1,12 @@
+import Header from './components/learning-router/Header'
+import MainRoutes from './components/routes/mainRoutes'
 import './App.css'
-import UseCallBackDemo from './components/useCallBack/useCallBackDemo'
-
 
 function App() {
   return (
 
     <>
-      <UseCallBackDemo/>
-    
+      <MainRoutes/>
     </>
 
   )
