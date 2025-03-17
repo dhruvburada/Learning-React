@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from "react";
+import { useLoaderData } from "react-router-dom";
 
 const Github = () => {
-  let [followers, setFollowers] = useState(0);
-  useEffect(() => {
-    fetch("https://api.github.com/users/dhruvburada")
-      .then(function (response) {
-        console.log(response);
-        return response.json();
-      }).then((data)=>setFollowers(data["followers"]));
-  }, []);
+  let data = useLoaderData();
+ 
+  
 
-  return <div>Github : {followers}</div>;
+  return (
+    <>
+    <h1>Followers: {data["followers"]}</h1>
+    <img src={data["avatar_url"]} alt="Avtar"/>
+    </>
+  );
+  
 };
 
 export default Github;
