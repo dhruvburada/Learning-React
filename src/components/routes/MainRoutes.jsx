@@ -8,6 +8,7 @@ import About from "../learning-router/About";
 import User from "../learning-router/User";
 import Github from "../learning-router/Github";
 import { githubInfoLoader } from "../learning-router/loaders/GithubInfoLoader";
+import { Jokes } from "../learning-router/Jokes";
 
 const MainRoutes = () => {
     let routes = createBrowserRouter(createRoutesFromElements(
@@ -17,6 +18,7 @@ const MainRoutes = () => {
             <Route path="about" element={<About/>} />
             <Route path="users/:username" element={<User/>} />
             <Route path="github" loader={githubInfoLoader} element={<Github/>} />
+            <Route path="jokes" element={<Jokes/>}/>
         </Route>
         
     ))
