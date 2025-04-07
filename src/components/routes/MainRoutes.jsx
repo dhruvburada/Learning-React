@@ -9,6 +9,8 @@ import User from "../learning-router/User";
 import Github from "../learning-router/Github";
 import { githubInfoLoader } from "../learning-router/loaders/GithubInfoLoader";
 import { Jokes } from "../learning-router/Jokes";
+import Login from "../ContextAPIDemo/Login";
+import Demo from "../ContextAPIDemo/Demo"
 
 const MainRoutes = () => {
     let routes = createBrowserRouter(createRoutesFromElements(
@@ -19,6 +21,8 @@ const MainRoutes = () => {
             <Route path="users/:username" element={<User/>} />
             <Route path="github" loader={githubInfoLoader} element={<Github/>} />
             <Route path="jokes" element={<Jokes/>}/>
+            <Route path="login" element={<Login/>} />
+            <Route path="dashboard" element={<Demo/>} />
         </Route>
         
     ))
