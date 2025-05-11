@@ -8,7 +8,7 @@ import About from "../learning-router/About";
 import User from "../learning-router/User";
 import Github from "../learning-router/Github";
 import { githubInfoLoader } from "../learning-router/loaders/GithubInfoLoader";
-import { Jokes } from "../learning-router/Jokes";
+import  Jokes  from "../learning-router/Jokes";
 import Login from "../ContextAPIDemo/Login";
 import Demo from "../ContextAPIDemo/Demo"
 
